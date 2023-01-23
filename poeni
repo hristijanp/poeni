@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int p = int.Parse(Console.ReadLine());
+            int d = int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
+
+            int vkupnoPoeni = 0;
+
+            for(int i = 1; i < n; i++)
+            {
+                vkupnoPoeni += p;
+                p += d;
+            };
+
+            Console.WriteLine(vkupnoPoeni);
+        }
+    }
+}
